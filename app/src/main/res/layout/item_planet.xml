@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000002">
+    <RelativeLayout
+        android:layout_width="375dp"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/list_background">
+
+        <ImageView
+            android:id="@+id/planetPhoto"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70px"
+            android:src="@drawable/planet_mercury" />
+
+        <TextView
+            android:id="@+id/planetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/planetPhoto"
+            android:text="Mercury"
+            android:textColor="@color/white"
+            android:textSize="55px"
+            android:fontFamily="@font/concertoneregular"/>
+
+        <TextView
+            android:id="@+id/planetDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/planetPhoto"
+            android:layout_below="@+id/planetName"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+            android:textColor="@color/white"
+            android:textSize="35px"
+            android:fontFamily="@font/oswaldlight"/>
+    </RelativeLayout>
+</RelativeLayout>
